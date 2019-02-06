@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Physijs</title>
+	<link rel="stylesheet" type="text/css" href="css/raycast.css" />
+
+	<script src="js/three.min.js"></script>
+	<script src="js/stats.js"></script>
+	<script src="js/physi.js"></script>
+	<script src="js/ammo.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/WebGL.js"></script>
+	
+
+</head>
+
+<body>
+	<div id="start-screen">
+		<h1>Blubbo</h1>
+		<a href="#" class="button" id="start-button" onclick="this.parentElement.style.display='none';">Start!</a>
+	</div>
+	<div id="UI">
+		<div class="menu left">
+			<h2>Blubbo</h2>
+			<a class="button small" id="help-button">Help</a>
+			<a class="button small" id="reset-button">Reset</a>
+		</div>
+
+		<div class="command">
+			<input type="text" name="cmd" id="cmd" value="Type Something!" onclick="this.value=''">
+		</div>
+
+		<!-- Help Window -->
+		<div id="help-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Blubbo Help</h2>
+				<p>Blubbo is a magic ball! Use the mouse to drag it around. Try to tell something to it and see if it reacts: </p>
+				
+				<h3>Command List</h3>
+				<ul>
+					<li><h4>Red/blue/green</h4></li>
+					<li><h4>80s Mode</h4></li>
+					<li><h4>Chair</h4></li>
+				</ul>
+				
+			</div>
+
+		</div>
+	</div>
+	<div id="viewport"></div>
+	<script type="text/javascript" src="raycast.js"></script>
+
+
+
+</body>
+
+</html>
